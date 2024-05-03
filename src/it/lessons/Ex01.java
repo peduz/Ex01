@@ -1,5 +1,7 @@
 package it.lessons;
 
+import java.util.Scanner;
+
 import it.prove.Auto;
 
 public class Ex01 {
@@ -8,7 +10,10 @@ public class Ex01 {
 		
 		auto.parti();
 		
-		auto.cambiaColore("bianco");
+		Scanner scan = new Scanner(System.in);
+		String nuovoColore = scan.nextLine();
+		
+		auto.cambiaColore(nuovoColore);
 		
 		auto.parti();
 		
@@ -16,17 +21,17 @@ public class Ex01 {
 		
 		auto2.parti();
 		
-		auto.anno = 2010;
-		auto.marca = "Volkswagen";
-		auto.colore = "grigio";
+//		auto.anno = 2010;
+//		auto.marca = "Volkswagen";
+//		auto.colore = "grigio";
 		
-		System.out.println(auto.colore);
+//		System.out.println(auto.colore);
 		
 		auto.cambiaColore("bianco");
 		
-		System.out.println(auto.colore);
+//		System.out.println(auto.colore);
 		
-		System.out.println(auto.marca);
+//		System.out.println(auto.marca);
 		
 		String pippo = auto.getMarca();
 //		System.out.println(pippo.toUpperCase());
