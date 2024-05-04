@@ -6,7 +6,7 @@ public class ClassA {
 		Singleton s = Singleton.getInstance();
 	}
 	
-	
+	//Metodo che saluta con la stringa "ciao"
 	public void saluto() {
 		System.out.println("Ciao");
 	}
