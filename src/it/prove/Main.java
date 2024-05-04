@@ -13,6 +13,7 @@ public class Main {
 		int perimetro = r.calcolaPerimetro();
 		System.out.println("Perimetro: " + perimetro);
 		
-		System.out.println(r.disegna());
+		r.disegna();
+//		System.out.println(r.disegna());
 	}
 }

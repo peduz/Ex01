@@ -33,41 +33,41 @@ public class Rettangolo {
 	}
 	
 	
-	public String disegna() {
-		String basePainted = "";
-		String altezzaPainted = "";
-		
-		//Disegno la base
-		for(int i = 0; i < base; i++) {
-			basePainted += "o ";
-		}
-		
-		//Disegno l'altezza
-		for(int i = 0; i < altezza-2; i++) {
-			String spaceCalcolator = "";
-			// Calcolo lo spazio da inserire fra le due righe di altezza
-			for(int j = 1; j < basePainted.length()-2; j++) {
-				spaceCalcolator += " ";
-			}
-			altezzaPainted += "o" + spaceCalcolator + "o\n";
-		}
-		// restituisco il disegno sottoforma di stringa
-		return basePainted + "\n" + altezzaPainted + basePainted;
-	}
-	
-//	public void disegna() {
-//		for(int i = 0; i < altezza; i++) {
-//			System.out.print("0");
-//			for(int j = 1; j < base - 1; j++) {
-//				if(i == 0 || i == altezza - 1) {					
-//					System.out.print("O");
-//				} else {
-//					System.out.print(" ");					
-//				}
-//				
-//			}
-//			System.out.println("0");
+//	public String disegna() {
+//		String basePainted = "";
+//		String altezzaPainted = "";
+//		
+//		//Disegno la base
+//		for(int i = 0; i < base; i++) {
+//			basePainted += "o ";
 //		}
+//		
+//		//Disegno l'altezza
+//		for(int i = 0; i < altezza-2; i++) {
+//			String spaceCalcolator = "";
+//			// Calcolo lo spazio da inserire fra le due righe di altezza
+//			for(int j = 1; j < basePainted.length()-2; j++) {
+//				spaceCalcolator += " ";
+//			}
+//			altezzaPainted += "o" + spaceCalcolator + "o\n";
+//		}
+//		// restituisco il disegno sottoforma di stringa
+//		return basePainted + "\n" + altezzaPainted + basePainted;
 //	}
+	
+	public void disegna() {
+		for(int i = 0; i < altezza; i++) {
+			System.out.print("0");
+			for(int j = 1; j < base - 1; j++) {
+				if(i == 0 || i == altezza - 1) {					
+					System.out.print("O");
+				} else {
+					System.out.print(" ");					
+				}
+				
+			}
+			System.out.println("0");
+		}
+	}
 	
 }
