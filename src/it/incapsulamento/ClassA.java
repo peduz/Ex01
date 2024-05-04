@@ -11,6 +11,7 @@ public class ClassA {
 		System.out.println("Ciao");
 	}
 	
+	//Metodo privato
 	private void interno() {
 		System.out.println("Da fuori non mi vedono");
 	}
