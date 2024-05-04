@@ -1,9 +1,12 @@
 package org.lessons.calcolatrice;
 
-/**
- * Nel progetto java.calcolatrice, nel package org.lessons.java.utils, creare una classe di helper CalcoliHelper.
+import java.util.Scanner;
 
-Come visto a lezione, strutturare la classe in modo che non possa essere istanziata e che presenti i seguenti metodi static:
+/**
+ * Nel progetto java.calcolatrice, nel package 
+ * org.lessons.java.utils, creare una classe di helper CalcoliHelper.
+Come visto a lezione, strutturare la classe in modo che non 
+possa essere istanziata e che presenti i seguenti metodi static:
 - Somma di due numeri interi
 - Somma di due numeri double
 - Differenza tra due numeri interi
@@ -17,9 +20,6 @@ Come visto a lezione, strutturare la classe in modo che non possa essere istanzi
 - Massimo tra due numeri interi
 - Massimo tra due numeri double
 
-Il fatto di dover scrivere lo stesso metodo per tipi di parametro diversi applica nella pratica uno dei principi di programmazione ad oggetti che abbiamo visto oggi…Quale? Scrivetelo in un commento all’interno del codice! :faccia_nerd:
-
-Create anche una classe CalcoliTest con il metodo main in cui testate tutti i metodi della vostra classe di helper (con un esempio per ogni casistica). Non dovete committare e pushare questa classe, serve solo a voi a scopo di test.
 
 BONUS:
 Aggiungete il metodo per l’elevamento a potenza che prende come parametri due numeri interi (base ed esponente) e ritorna la base elevata all’esponente. Occhio che sia la base che l’esponente potrebbero essere uguali a zero oppure numeri negativi!
@@ -28,4 +28,23 @@ Buon lavoro!
  */
 public class UseCalculator {
 
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+//		
+//		System.out.println("Inserisci due numeri per fare le operazioni");
+//		int a = input.nextInt();
+//		int b = input.nextInt();
+//		
+//		System.out.println("Coi numeri interi: ");
+//		CalcoliHelper.allOperazioni(a, b);
+
+		System.out.println("Inserisci due numeri per fare le operazioni");
+		double x = input.nextDouble();
+		double y  = input.nextDouble();
+		
+		System.out.println("Coi numeri decimali: ");
+		CalcoliHelper.allOperazioni(x, y);
+		
+	}
+	
 }
