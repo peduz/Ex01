@@ -12,7 +12,7 @@ public class ClassA {
 	}
 	
 	private void interno() {
-		System.out.println("Sono privato");
+		System.out.println("Da fuori non mi vedono");
 	}
 	
 	protected void inPackage() {
