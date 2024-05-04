@@ -10,7 +10,8 @@ public class ClassA {
 	public void saluto() {
 		System.out.println("Ciao");
 	}
-	
+
+	//Metodo private
 	private void interno() {
 		System.out.println("Da fuori non mi vedono");
 	}
